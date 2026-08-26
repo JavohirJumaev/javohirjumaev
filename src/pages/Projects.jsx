@@ -12,7 +12,7 @@ export default function Projects(){
             <div className="flex flex-row mt-5 justify-between w-full p-5">
                 <div onClick={() => window.location.href = "https://github.com/JavohirJumaev/expense-tracker"} className="w-100 h-100 cursor-pointer h-fit p-5">
                     <img src={expenseTracker}/>
-                    <p className="text-white mt-5"></p>
+                    <p className="text-white mt-5">Expense Tracker</p>
                 </div>
                 <div onClick={() => window.location.href = "https://github.com/JavohirJumaev/facts-about-cats"} className="w-100 h-100 cursor-pointer h-fit p-5">
                     <img src={factsAboutCats}/>
