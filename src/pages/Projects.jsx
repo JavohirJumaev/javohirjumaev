@@ -22,7 +22,7 @@ export default function Projects() {
     ]
 
     return (
-        <div className="flex flex-col items-center justify-center px-5 py-20 sm:px-8 md:py-32">
+        <div className="flex flex-col items-center justify-center sm:px-8 md:py-15">
             <h2 className="text-4xl font-black text-white sm:text-5xl md:text-6xl lg:text-7xl">
                 Projects
             </h2>
