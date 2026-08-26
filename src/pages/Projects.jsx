@@ -2,26 +2,52 @@ import expenseTracker from '../../public/expenseTracker.jpg'
 import factsAboutCats from '../../public/factsAboutCats.jpg'
 import movieSearch from '../../public/movieSearch.jpg'
 
+export default function Projects() {
+    const projects = [
+        {
+            title: "Expense Tracker",
+            image: expenseTracker,
+            link: "https://github.com/JavohirJumaev/expense-tracker",
+        },
+        {
+            title: "Facts About Cats",
+            image: factsAboutCats,
+            link: "https://github.com/JavohirJumaev/facts-about-cats",
+        },
+        {
+            title: "Movie Search",
+            image: movieSearch,
+            link: "https://github.com/JavohirJumaev/movie-search",
+        },
+    ]
 
-export default function Projects(){
-    return(
-        <div className="flex flex-col justify-center items-center mt-[30%]">
-            <div className="text-white font-black text-7xl">
+    return (
+        <div className="flex flex-col items-center justify-center px-5 py-20 sm:px-8 md:py-32">
+            <h2 className="text-4xl font-black text-white sm:text-5xl md:text-6xl lg:text-7xl">
                 Projects
-            </div>
-            <div className="flex flex-row mt-5 justify-between w-full p-5">
-                <div onClick={() => window.location.href = "https://github.com/JavohirJumaev/expense-tracker"} className="w-100 h-100 cursor-pointer h-fit p-5">
-                    <img src={expenseTracker}/>
-                    <p className="text-white mt-5">Expense Tracker</p>
-                </div>
-                <div onClick={() => window.location.href = "https://github.com/JavohirJumaev/facts-about-cats"} className="w-100 h-100 cursor-pointer h-fit p-5">
-                    <img src={factsAboutCats}/>
-                    <p className="text-white mt-5">Facts About Cats</p>
-                </div>
-                <div onClick={() => window.location.href = "https://github.com/JavohirJumaev/movie-search"} className="w-100 h-100 cursor-pointer h-fit p-5">
-                    <img src={movieSearch}/>
-                    <p className="text-white mt-5">Movie Search</p>
-                </div>
+            </h2>
+            <div className="mt-8 grid w-full max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {projects.map((project) => (
+                    <div
+                        key={project.title}
+                        onClick={() => window.location.href = project.link}
+                        className="group cursor-pointer rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-sm transition duration-300 hover:-translate-y-2 hover:bg-white/10"
+                    >
+                        <img
+                            src={project.image}
+                            alt={project.title}
+                            className="w-full rounded-xl object-cover transition duration-300 group-hover:scale-[1.02]"
+                        />
+
+                        <p className="mt-4 text-base font-semibold text-white sm:text-lg">
+                            {project.title}
+                        </p>
+
+                        <p className="mt-1 text-sm text-gray-500">
+                            View on GitHub →
+                        </p>
+                    </div>
+                ))}
             </div>
         </div>
     )
