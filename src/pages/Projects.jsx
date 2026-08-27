@@ -22,11 +22,11 @@ export default function Projects() {
     ]
 
     return (
-        <div className="flex flex-col items-center justify-center sm:px-8 md:py-15">
+        <div className="flex flex-col items-center justify-center sm:px-8 md:py-5">
             <h2 className="text-4xl font-black text-white sm:text-5xl md:text-6xl lg:text-7xl">
                 Projects
             </h2>
-            <div className="mt-8 grid w-full max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-15 grid w-full max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {projects.map((project) => (
                     <div
                         key={project.title}

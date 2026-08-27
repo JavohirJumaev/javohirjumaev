@@ -1,3 +1,4 @@
+
 export default function Experience() {
     const experiences = [
         {
@@ -21,13 +22,13 @@ export default function Experience() {
     ];
 
     return (
-        <div className="flex flex-col items-center justify-center sm:px-8 md:py-15">
+        <div className="flex flex-col items-center justify-center sm:px-8 md:py-5">
 
             <h2 className="text-4xl font-black text-white sm:text-5xl md:text-6xl lg:text-7xl">
                 Experience
             </h2>
 
-            <div className="space-y-10 mt-20 w-full max-w-4xl">
+            <div className="space-y-10 mt-15 w-full max-w-4xl">
                 {experiences.map((experience) => (
                     <div
                         key={experience.company}
