@@ -14,80 +14,86 @@ export default function Blog() {
     ];
 
     return (
-        <div className="flex flex-col items-center justify-center sm:px-8 md:py-5">
-
-            <h2 className="text-4xl font-black text-white sm:text-5xl md:text-6xl lg:text-7xl">
+        <div className="w-full flex flex-col items-center px-4 sm:px-6 md:px-8 py-6 sm:py-8 md:py-10">
+            
+            {/* Title */}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-white text-center">
                 Blog
-            </h2>
+            </h1>
 
-            <div className="w-full max-w-4xl mt-10 sm:mt-12 md:mt-15">
+            {/* Posts */}
+            <div className="w-full max-w-4xl mt-8 sm:mt-10 md:mt-14">
                 <section className="space-y-4 sm:space-y-5">
-
                     {posts.map((post) => (
                         <Link
                             key={post.slug}
                             to={`/blog/${post.slug}`}
                             className="group block w-full"
                         >
-                            <article className="
-                                w-full
-                                p-5 sm:p-6 md:p-8
-                                rounded-2xl
-                                bg-white/[0.03]
-                                border border-white/10
-                                backdrop-blur-xl
-                                transition-all duration-300
-                                hover:border-cyan-300/30
-                                hover:bg-white/[0.05]
-                                hover:-translate-y-1
-                            ">
-
+                            <article
+                                className="
+                                    w-full
+                                    p-4 sm:p-6 md:p-8
+                                    rounded-2xl
+                                    bg-white/[0.03]
+                                    border border-white/10
+                                    backdrop-blur-xl
+                                    transition-all duration-300
+                                    hover:border-cyan-300/30
+                                    hover:bg-white/[0.05]
+                                    hover:-translate-y-1
+                                "
+                            >
+                                {/* Meta */}
                                 <div className="
                                     flex flex-wrap
                                     items-center
-                                    gap-2 sm:gap-3
+                                    gap-x-2 gap-y-1.5
                                     text-[10px] sm:text-xs
                                     text-gray-500
                                     mb-4 sm:mb-5
                                 ">
                                     <span>{post.date}</span>
 
-                                    <span className="w-1 h-1 rounded-full bg-gray-600" />
+                                    <span className="w-1 h-1 rounded-full bg-gray-600 shrink-0" />
 
                                     <span>{post.category}</span>
 
-                                    <span className="w-1 h-1 rounded-full bg-gray-600" />
+                                    <span className="w-1 h-1 rounded-full bg-gray-600 shrink-0" />
 
                                     <span>{post.readTime}</span>
                                 </div>
 
-                                <div className="flex items-start justify-between gap-4 sm:gap-6">
-
+                                {/* Content */}
+                                <div className="flex items-start justify-between gap-3 sm:gap-6">
                                     <div className="min-w-0">
-
                                         <h2 className="
-                                            text-lg
+                                            text-base
                                             sm:text-xl
                                             md:text-2xl
                                             font-semibold
                                             text-cyan-300
                                             leading-snug
+                                            break-words
                                         ">
                                             {post.title}
                                         </h2>
 
                                         <p className="
                                             mt-2 sm:mt-3
-                                            text-sm sm:text-base
+                                            text-xs
+                                            sm:text-sm
+                                            md:text-base
                                             text-gray-400
-                                            leading-6 sm:leading-7
+                                            leading-5
+                                            sm:leading-7
                                             max-w-2xl
                                         ">
                                             {post.description}
                                         </p>
-
                                     </div>
 
+                                    {/* Arrow */}
                                     <span className="
                                         hidden sm:block
                                         shrink-0
@@ -99,13 +105,10 @@ export default function Blog() {
                                     ">
                                         →
                                     </span>
-
                                 </div>
-
                             </article>
                         </Link>
                     ))}
-
                 </section>
             </div>
         </div>
