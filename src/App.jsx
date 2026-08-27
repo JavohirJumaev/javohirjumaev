@@ -3,6 +3,7 @@ import Projects from "./pages/Projects"
 import Home from "./pages/Home"
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Experience from "./pages/Experience";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
+            <Route path="/experience" element={<Experience/>}/>
           </Routes>
         <Footer/>
     </BrowserRouter>
