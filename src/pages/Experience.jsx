@@ -68,7 +68,7 @@ export default function Experience() {
 
                                 </div>
 
-                                <p className="text-cyan-300 text-sm font-medium mt-0.5">
+                                <p className="text-cyan-300 text-sm font-medium mt-3">
                                             {experience.title} · {experience.location}
                                         </p>
 
