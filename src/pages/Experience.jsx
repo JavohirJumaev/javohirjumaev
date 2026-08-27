@@ -70,7 +70,7 @@ export default function Experience() {
 
                                 <p className="text-cyan-300 text-sm font-medium mt-3">
                                             {experience.title} · {experience.location}
-                                        </p>
+                                </p>
 
                                 <p className="text-white/60 leading-relaxed mt-3 max-w-xl">
                                     {experience.description}
