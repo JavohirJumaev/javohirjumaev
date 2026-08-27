@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Experience from "./pages/Experience";
 import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 
 function App() {
 
@@ -17,8 +18,8 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/experience" element={<Experience/>}/>
             <Route path="/blog" element={<Blog/>}/>
+            <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>
-        <Footer/>
     </BrowserRouter>
     </>
   )

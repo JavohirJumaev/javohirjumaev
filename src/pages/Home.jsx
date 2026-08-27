@@ -33,7 +33,7 @@ export default function Home() {
                 </p>
             </div>
 
-            <div className="mt-6 w-full max-w-2xl">
+            <div className="mt-6 w-full max-w-xl">
                 <ul className="flex flex-wrap justify-center gap-2 sm:gap-3">
                     {skills.map((skill) => (
                         <li

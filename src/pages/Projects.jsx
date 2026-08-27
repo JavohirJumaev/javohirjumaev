@@ -19,6 +19,7 @@ export default function Projects() {
             image: movieSearch,
             link: "https://github.com/JavohirJumaev/movie-search",
         },
+        
     ]
 
     return (

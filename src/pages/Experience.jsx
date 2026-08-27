@@ -3,7 +3,7 @@ export default function Experience() {
     const experiences = [
         {
             img: "/person.png",
-            company: "Self-Learning",
+            company: "Self-employed",
             location: "Navoiy, Uzbekistan",
             title: "Frontend Development",
             date: "2025 — Present",
