@@ -11,7 +11,7 @@ export default function Home() {
     ];
 
     return (
-        <div className="flex min-h-[80vh] flex-col items-center justify-center px-5 text-center sm:px-8">
+        <div className="flex min-h-[80vh] flex-col items-center justify-center px-5 text-center sm:px-8 ">
             
             <h1 className="text-4xl font-black text-white sm:text-5xl md:text-6xl lg:text-7xl">
                 Javohir Jumaev
