@@ -1,26 +1,10 @@
 import { Link, useParams } from "react-router-dom";
+import { posts } from "../data/posts.jsx";
 
 export default function BlogPost() {
     const { slug } = useParams();
 
-    const posts = {
-        "spider-man-brand-new-day": {
-            title: "What I took away from Spider-Man: Brand New Day",
-            date: "August 27, 2026",
-            category: "Reflection",
-            readTime: "1 min read",
-
-            content: (
-                <>
-                    <p>
-                        Sometimes, you have to let go of the past instead of trying to bring it back. Not everything meaningful in your life is meant to stay forever. You can lose people, relationships, friendships or entire chapters of your life and that doesn't make those moments meaningless. You don't need everyone to remember you to know who you are. Your actions, choices and the person you become matter more than whether someone remembers your place in their story. And maybe the hardest lesson: you can love someone and still choose to move forward without them. Some chapters end. That doesn't mean the story does.
-                    </p>
-                </>
-            ),
-        },
-    };
-
-    const post = posts[slug];
+    const post = posts.find((post) => post.slug === slug);
 
     return (
         <main className="w-full px-4 sm:px-6 md:px-8 py-6 sm:py-8 md:py-10">

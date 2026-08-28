@@ -1,18 +1,7 @@
 import { Link } from "react-router-dom";
+import { posts } from "../data/posts.jsx";
 
 export default function Blog() {
-    const posts = [
-        {
-            title: "What I took away from Spider-Man: Brand New Day",
-            description:
-                "A short reflection on letting go of the past, accepting endings, and understanding that moving forward doesn’t make the memories any less meaningful.",
-            date: "August 12, 2026",
-            category: "Reflection",
-            readTime: "3 min read",
-            slug: "spider-man-brand-new-day",
-        },
-    ];
-
     return (
         <div className="w-full flex flex-col items-center px-4 sm:px-6 md:px-8 py-6 sm:py-8 md:py-10">
             
