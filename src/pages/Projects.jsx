@@ -1,6 +1,7 @@
 import expenseTracker from '../../public/expenseTracker.jpg'
 import factsAboutCats from '../../public/factsAboutCats.jpg'
 import movieSearch from '../../public/movieSearch.jpg'
+import quiz from '../../public/quiz.jpg'
 
 export default function Projects() {
     const projects = [
@@ -18,6 +19,11 @@ export default function Projects() {
             title: "Movie Search",
             image: movieSearch,
             link: "https://github.com/JavohirJumaev/movie-search",
+        },
+        {
+            title: "Quiz",
+            image: quiz,
+            link: "https://github.com/JavohirJumaev/quiz",
         },
         
     ]
