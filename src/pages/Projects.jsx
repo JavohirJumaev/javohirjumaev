@@ -1,32 +1,6 @@
-import expenseTracker from '../../public/expenseTracker.jpg'
-import factsAboutCats from '../../public/factsAboutCats.jpg'
-import movieSearch from '../../public/movieSearch.jpg'
-import quiz from '../../public/quiz.jpg'
+import { projects } from "../data/projects"
 
 export default function Projects() {
-    const projects = [
-        {
-            title: "Expense Tracker",
-            image: expenseTracker,
-            link: "https://github.com/JavohirJumaev/expense-tracker",
-        },
-        {
-            title: "Facts About Cats",
-            image: factsAboutCats,
-            link: "https://github.com/JavohirJumaev/facts-about-cats",
-        },
-        {
-            title: "Movie Search",
-            image: movieSearch,
-            link: "https://github.com/JavohirJumaev/movie-search",
-        },
-        {
-            title: "Quiz",
-            image: quiz,
-            link: "https://github.com/JavohirJumaev/quiz",
-        },
-        
-    ]
 
     return (
         <div className="flex flex-col items-center justify-center px-4 sm:px-6 md:px-8 py-6 sm:py-8 md:py-10">
@@ -51,7 +25,7 @@ export default function Projects() {
                         </p>
 
                         <p className="mt-1 text-sm text-gray-500">
-                            View on GitHub →
+                            View  →
                         </p>
                     </div>
                 ))}
