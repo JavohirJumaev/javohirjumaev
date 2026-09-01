@@ -18,7 +18,7 @@ export const posts = [
         title: "What I took away from Spider-Man: Brand New Day",
         date: "August 12, 2026",
         category: "Reflection",
-        readTime: "3 min read",
+        readTime: "2 min read",
         slug: "spider-man-brand-new-day",
 
         content: (
